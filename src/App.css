@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+*{
+  box-sizing:border-box;
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hide{
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.deleted-gif-text{
+  width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.delete{
+   
+  /* position: absolute;
+  width: 3rem;
+  right: -4rem; */
+  background-color:hotpink;
+}
+
+.welcome{
+  color: orangered;
+  font-size: 2.5rem;
+}
+
+.para{
+  color: orangered;
+  font-size: 1.2rem;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-bar{
+   text-overflow: ellipsis;
+   position: relative;
+   width: 24rem;
+   height: 20rem;
+   overflow-y: scroll;
+   overflow-x:hidden;
+   border: 2px solid blue;
+}
+
+
+.date{
+  margin-left:1em;
+  position: absolute;
+  font-size: 0.5em;
+  font-weight: 500;
+  color: blueviolet;
+  transform: translateY(0.6em);
+}
+
+.dropdown-menu .box input{
+  margin-bottom: 0.5em;
+}
+
+.Gifs{
+   height: 12rem;
+   display: flex;
+   overflow-y:scroll;
+}
+
+.gif-message{
+  width: 50%;
+  margin-bottom: 1.5em;
+}
+
+
+/* .gif{
+  width: 4rem;
+  height:4rem;
+} */
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.padding-top{
+  padding-bottom: 8rem;
+}
+
+.messages{
+
+  position: relative;
+  height: auto;
+  padding: 0.3em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom:1.4rem;
+  text-overflow: ellipsis;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom-wrapper {
+  position: relative;
+  top: 0.2em;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.send-button{
+  align-self: flex-end;
+  margin-left:1.2em;
 }
+
+.search-input{
+  margin-left:1em;
+  width: 14rem;
+}
+
+button{
+  cursor: pointer;
+}
+
+p{
+ 
+  padding: 0.3em 0;
+
+}
+
+
+@media screen and (max-width: 520px) and (min-width: 10px)  {
+
+
+.text-bar{
+  width: 80%;
+  margin: auto;
+}
+
+.send-button{
+  margin-top: 0.4em !important  ;
+  margin-left: 0;
+  margin: auto;
+}
+
+
+.delete{
+  width: 2.3rem;
+  font-size: 0.6em;
+  height: 1.6rem;
+  position: relative;
+  top: 1rem;
+
+}
+
+.search-input {
+  margin-left: 0;
+  width: 100%;
+}
+
+.message-send-wrapper{
+    margin-top: 0.1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-wrapper{
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+}
+
+
